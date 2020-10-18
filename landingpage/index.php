@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page Kuy Laundry</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/stylegw.css">
@@ -83,7 +83,7 @@
         </div>
     </div>
     <!-- end of home -->
-
+    <hr>
     <!-- About -->
     <div class="about" id="about">
             <div class="mx-auto">
@@ -124,7 +124,7 @@
         </div>
     </div>
     <!-- end of about -->
-
+    <hr>
     <!-- Fitur -->
     <div class="fitur" id="fitur">
             <div class="d-flex justify-content-center">
@@ -183,7 +183,7 @@
         </div>
     </div>
     <!-- end of fitur -->
-
+    <hr>
     <!-- Testimoni -->
     <div class="testi" id="testi">
             <div class="d-flex justify-content-center">
@@ -215,6 +215,7 @@
             </div>
         </div>
     <!-- end of testimoni -->
+    <hr>
     <!-- Contact -->
     <div class="contact" id="kontak">
         <div class="container-fluid px-3 px-sm-5 my-5 text-center">
@@ -249,12 +250,12 @@
                     </div>
                 </div>
                 <p class="text-center display-4">Penasaran dengan Produk Kita?</p>
+                <hr>
                 <a href="../login/login.php" class="btn btn-info" role="button">Gabung !</a>
             </div>
         </div>
     </div>
     <!-- end of contact -->
-
     <!-- Footer -->
         <footer class="page-footer font-small bg-info pt-4" id="contact">
                 <!-- Footer Links -->
@@ -265,12 +266,12 @@
                         <div class="col-md-6 mt-md-0 mt-3">
                             <!-- Content -->
                             <h5 class="text-uppercase text-center">Alamat</h5>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.483659749977!2d112.72514561532782!3d-7.299430273783382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb9ab8b4fde1%3A0xa4ee655389b2ad27!2sJl.%20Hayam%20Wuruk%2C%20Sawunggaling%2C%20Kec.%20Wonokromo%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060242!5e0!3m2!1sid!2sid!4v1603000871104!5m2!1sid!2sid" width="50%" height="210" frameborder="1" style="border:0;" allowfullscreen="1" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.483659749977!2d112.72514561532782!3d-7.299430273783382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb9ab8b4fde1%3A0xa4ee655389b2ad27!2sJl.%20Hayam%20Wuruk%2C%20Sawunggaling%2C%20Kec.%20Wonokromo%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060242!5e0!3m2!1sid!2sid!4v1603000871104!5m2!1sid!2sid" width="100%" height="210" frameborder="1" style="border:0;" allowfullscreen="1" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                         <!-- Grid column -->
                             <hr class="clearfix w-100 d-md-none pb-3">
                         <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
+                        <div class="col-md-6 mb-md-0 mb-3">
                             <!-- Links -->
                             <h5 class="text-uppercase text-center">Contact</h5>
                             <ul class="list-unstyled text-center d-flex flex-column">
@@ -313,6 +314,5 @@
             objectFitImages()
         })
     </script>
-</body>
-    
+</body>  
 </html>
