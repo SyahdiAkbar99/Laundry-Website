@@ -28,50 +28,12 @@ a {
 .logo {
     margin-top: 30px;
     margin-left: 15px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .card2 {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px
-}
-/* 
-.social-connect .fa-google-plus {
-    color: #df4b37;
-    padding: 10px 12px;
-    font-size: 20px
-}
-
-.social-connect .fa-facebook-square {
-    color: #3b5998;
-    padding: 10px 15px;
-    font-size: 20px
-} */
-
-.social-connect {
-    padding: 3px 0px 3px 3px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid #E0E0E0
-}
-
-.social-connect:hover {
-    background-color: #EEEEEE
-}
-
-.line {
-    height: 1px;
-    width: 45%;
-    background-color: #E0E0E0;
-    margin-top: 10px
-}
-
-.or {
-    width: 10%
-}
-
-.text-sm {
-    font-size: 14px !important
 }
 
 input {
@@ -134,14 +96,14 @@ button:focus {
     border-radius: 20px;
     min-height: 352px;
     margin-top: 80px;
-    padding: 30px
+    padding: 20px
 }
 
 .carousel-indicators {
     position: absolute;
     bottom: -100px;
     display: -webkit-box !important;
-    padding-left: 37px;
+    padding-left: 50px;
 }
 
 .carousel-indicators li {
@@ -204,7 +166,7 @@ button:focus {
     margin-top: 150px
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 600px) {
     .card1 {
         border-bottom-left-radius: 0px;
         border-top-right-radius: 20px
@@ -213,5 +175,9 @@ button:focus {
     .card2 {
         border-bottom-left-radius: 20px;
         border-top-right-radius: 0px
+    }
+
+    ol.carousel-indicators{
+        margin-left: 1px;
     }
 }

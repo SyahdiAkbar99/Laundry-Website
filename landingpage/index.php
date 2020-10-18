@@ -6,9 +6,10 @@
     <title>Landing Page Kuy Laundry</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/stylegw.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylekit.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,14 +57,15 @@
             </p>
             <hr class="my-4">
             <div class="text-center">
-                <a href="#home" class="btn btn-outline-info btn-lg" role="button" style="font-family: gentium basic, serif">Pelajari</a>
+                <a href="#prepo" class="btn btn-outline-info btn-lg" role="button" style="font-family: gentium basic, serif">Pelajari</a>
             </div>
         </div>
     </div>
     <!-- end of jumbotron -->
     
     <!-- Home -->
-    <div class="home">
+    <div id="prepo">
+    <div class="home" data-aos="zoom-in-left">
         <div class="container-fluid">
             <div class="jumbotron">
                 <div class="jumbotron-background">
@@ -82,10 +84,12 @@
  
         </div>
     </div>
+    </div>
     <!-- end of home -->
     <hr>
     <!-- About -->
-    <div class="about" id="about">
+    <div id="about">
+    <div class="about" data-aos="zoom-in-left">
             <div class="mx-auto">
                 <p class="textAbout">Kuy Laundry dibangun sejak tahun 2020 dengan fasilitas yang dikhususkan untuk
                     Pencatatan Laundry dan Bergerak dibidang ekonomi bisnis. Membantu para outlet
@@ -97,7 +101,7 @@
             <div class="row abt">
                 <div class="col-md-4">  
                     <div class="card mx-auto " style="width: 18rem;">
-                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/adress.png" alt="Card image cap">
+                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/adress.png" alt="Card image cap"> <hr style="background-color:black">
                         <div class="card-body">
                             <p class="card-text">Outlet dan cabangan lebih dari 100</p>
                         </div>
@@ -105,7 +109,7 @@
                 </div>
                 <div class="col-md-4"> 
                     <div class="card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/people.png" alt="Card image cap">
+                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/people.png" alt="Card image cap"> <hr style="background-color:black">
                         <div class="card-body">
                             <p class="card-text">Mutasi karyawan antar cabang? dengan Kuy Laundry bisa teratasi</p>
                         </div>
@@ -113,7 +117,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/new-message.png" alt="Card image cap">
+                        <img class="card-img-top rounded mx-auto d-block" src="../assets/images/new-message.png" alt="Card image cap"> <hr style="background-color:black">
                         <div class="card-body">
                             <p class="card-text">Kalau cucianmu sudah jadi, akan ada sms langsung ke nomormu</p>
                         </div>
@@ -123,10 +127,12 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- end of about -->
     <hr>
     <!-- Fitur -->
-    <div class="fitur" id="fitur">
+    <div id="fitur">
+    <div class="fitur" data-aos="zoom-in-left">
             <div class="d-flex justify-content-center">
                 <p class="titleF">Fitur apa saja yang tersedia?</p>
             </div>
@@ -182,10 +188,12 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- end of fitur -->
     <hr>
     <!-- Testimoni -->
-    <div class="testi" id="testi">
+    <div id="testi">
+    <div class="testi" data-aos="zoom-in-left">
             <div class="d-flex justify-content-center">
                 <p class="titleT">ADA TESTIMONI NIH, KUY KITA CEK</p>
             </div>
@@ -214,10 +222,11 @@
                 </div>
             </div>
         </div>
+        </div>
     <!-- end of testimoni -->
     <hr>
     <!-- Contact -->
-    <div class="contact" id="kontak">
+    <div class="contact" data-aos="zoom-in-left" id="kontak">
         <div class="container-fluid px-3 px-sm-5 my-5 text-center">
                 <p class="titleT">ADA BEBERAPA DEVICE PENDUKUNG</p>
                 <div class="mx-auto">
@@ -309,10 +318,12 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/styleku.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(function(){
             objectFitImages()
         })
+        AOS.init();
     </script>
 </body>  
 </html>
