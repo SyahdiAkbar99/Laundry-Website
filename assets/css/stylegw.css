@@ -1,0 +1,405 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.jumbotron{
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 2;
+
+    background:rgba(0, 0, 0, 0.2);
+    padding: 6em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.jumbotron-background{
+    object-fit: cover;
+    font-family: 'object-fit:cover;';
+    position: absolute;
+    padding-top: 50px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+img.blur{
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
+
+ul.navbar-nav.ml-auto li.nav-item a.nav-link{
+    color: white;
+    text-align:center;
+    margin: 10px;
+    border-radius: 20px;
+ }
+ ul.navbar-nav.ml-auto li.nav-item a.nav-link:hover{
+     background-color: lightskyblue;
+ }
+ .judul{
+     font-size: 40px;
+     font-weight: bold;
+     font-family: gentium basic,serif;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ p.subJudul{
+     padding: 100px 200px 110px 200px;
+     line-height: 50px;
+     font-size: 37px;
+     text-align: center;
+     font-weight: bold;
+     font-family: gentium basic,serif;
+     
+ }
+ p.subJudul, p.judul{
+     z-index: 2;
+ }
+
+ .jumbotron img.img-fluid{
+     opacity: 0.3;
+     margin-top: -1px;
+ }
+ .container-fluid .jumbotron{
+    height: 550px;
+ }
+ div.jumbotron.jumbotron-fluid{
+     margin: 0;
+ }
+
+ .textAbout{
+     padding: 100px 200px;
+     line-height: 50px;
+     text-align: center;
+     font-family: gentium basic,serif;
+
+ }
+ .textFitur{
+     padding-top: 50px;
+     padding-bottom: 50px;
+     text-align: center;
+     font-family: serif;
+ }
+ p.titleF{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: gentium basic,serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .abt .card, .ftr .card{
+     margin-bottom: 30px;
+     /* background-color: rgb(230, 239, 243); */
+     border: none;
+     height: 330px;
+     padding-top: 15px;
+     border-radius: 20px;
+     /* box-shadow: 0px 4px 8px 0px; */
+ }
+ .card img{
+     width: 200px;
+ }
+
+ div.fitur#fitur{
+     padding-top: 155px;
+ }
+ p.card-text{
+     text-align: center;
+     font: 22px gentium basic,serif;
+     font-weight: bold;
+ }
+
+ div.testi#testi{
+    height: 100%;
+    margin-top: 200px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+p.titleT{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: gentium basic,serif;
+    text-transform: uppercase;
+    text-align: center;
+    /* padding-top: 10px; */
+}
+
+div.contact#kontak{
+    padding-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a{
+    display: inline-block;
+}
+.fa {
+  padding: 10px 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 40%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google {
+    background: #b49c99;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-whatsapp {
+    background: #63df10;
+    color: white;
+  }
+
+ @media screen and (min-width: 601px) {
+     p.subJudul {
+         font-size: 30px;
+     }
+     p.textAbout{
+         font-size: 34px;
+     }
+     p.textFitur{
+         font-size: 34px;
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+     p.subJudul{
+         font-size: 20px;
+         padding:12px;
+         text-align:justify;
+         text-indent: 50px;
+     }
+     p.textAbout{
+         font-size: 24px;
+         padding:12px;
+         text-align:justify;
+         text-indent: 50px;
+     }
+     p.textFitur{
+        font-size: 24px;
+        padding:12px;
+        text-align:justify;
+        text-indent: 50px;
+    }
+ }
+
+ #demo {
+    background: linear-gradient(112deg, #6ca7d8 50%, rgb(8, 221, 236) 50%);
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(20, 14, 14, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+}
+
+i{
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset;
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(180deg, #66a7e0, #fff);
+    background-repeat: no-repeat
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #1E88E5 !important;
+    border: none;
+    padding: 5px 20px !important;
+    font: inherit;
+    font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #0D47A1 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none
+}
+
+.next {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.prev {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.item.show {
+    display: block;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    .item {
+        display: block !important
+    }
+}
