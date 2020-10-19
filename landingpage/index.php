@@ -265,8 +265,8 @@
         </div>
     </div>
     <!-- end of contact -->
-    <!-- Footer -->
-        <footer class="page-footer font-small bg-info pt-4" id="contact">
+            <!-- Footer -->
+            <footer class="page-footer font-small bg-info pt-4" id="contact">
                 <!-- Footer Links -->
                 <div class="container-fluid text-center text-md-left">
                     <!-- Grid row -->
@@ -308,8 +308,8 @@
                         <a href="https://ideku-reserved.com/" style="font:15 serif; font-weight:bold; color:white"> Ideku reserved.com</a>
                     </div>
                     <!-- Copyright -->
-        </footer>
-    <!-- Footer -->
+            </footer>
+            <!-- Footer -->
 
     <!-- end of contact -->
     <script src="../assets/js/jquery.min.js"></script>

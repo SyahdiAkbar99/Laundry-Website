@@ -72,15 +72,15 @@
                     <div class="row mt-3">
                         <div class="col-md-12"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Username</h6>
-                            </label> <input type="text" name="uname" placeholder="mbalaura123">
+                            </label> <input type="text" name="usrnm" placeholder="mbalaura123">
                         </div>
                     </div>
                         <div class="row px-3"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Password</h6>
-                            </label> <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            </label> <input type="password" name="pw" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                         </div>
                     <div class="row mb-4">
-                        <div class="col-md-12"> <a href="../" class="btn btn-info text-center mb-1 py-2" role="button"> Masuk </a>
+                        <div class="col-md-12"> <a href="../admin/output/dashboard.php" class="btn btn-info text-center mb-1 py-2" role="button"> Masuk </a>
                     </div>
                 </div>
 

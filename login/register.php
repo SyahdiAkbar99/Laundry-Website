@@ -73,15 +73,15 @@
                     <div class="row mt-3">
                         <div class="col-md-6"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Nama Lengkap Pemilik</h6>
-                            </label> <input type="text" name="fulln_pemilik" placeholder="Mba Laura">
+                            </label> <input type="text" name="fullnm_pemilik" placeholder="Mba Laura">
                         </div>
                         <div class="col-md-6"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Nama User Pemilik</h6>
-                            </label> <input type="text" name="usern_pemilik" placeholder="mbalaura123">
+                            </label> <input type="text" name="usrnm_pemilik" placeholder="mbalaura123">
                         </div>
                         <div class="col-md-6"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Nama User Admin</h6>
-                            </label> <input type="text" name="n_admin" placeholder="Mba Laura">
+                            </label> <input type="text" name="nm_admin" placeholder="Mba Laura">
                         </div>
                         <div class="col-md-6"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Nomor HP User Pemilik</h6>
@@ -94,16 +94,16 @@
                         </div>
                         <div class="row px-3"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Password User</h6>
-                            </label> <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            </label> <input type="password" name="pw_pemilik" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                         </div>
                         <div class="row px-3"> <label class="mb-0">
                                 <h6 class="mb-0 text-sm">Password Admin</h6>
-                            </label> <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            </label> <input type="password" name="pw_admin" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                         </div>
                     <div class="row px-3 mb-3"> <small class="text-muted">Dengan mendaftar kamu setuju akan  <a href="" class="text-primary">Kebijakan</a> dan <a href="" class="text-primary">Ketentuan</a> dari kami</small>
                     </div>
                     <div class="row mb-4">
-                        <div class="col-md-12"><a href="../" class="btn btn-info text-center mb-1 py-2" role="button">Buat Akun</a>
+                        <div class="col-md-12"><a href="../login/login.php" class="btn btn-info text-center mb-1 py-2" role="button">Buat Akun</a>
                     </div>
                 </div>
 
