@@ -140,7 +140,7 @@
                     </table>
                    </div>
                 </div>
-                <a href="../../admin/input/absen_pegawai_i.php" class="btn btn-info text-center" role="button" style="border-radius:10px;"><i class="fa fa-plus"></i>&nbsp;tambah</a>
+                <a href="../../manager/input/gaji_i.php" class="btn btn-info text-center" role="button" style="border-radius:10px;"><i class="fa fa-plus"></i>&nbsp;tambah</a>
                 <!-- /. baris  -->
                 <hr />
                   <div class="row">
