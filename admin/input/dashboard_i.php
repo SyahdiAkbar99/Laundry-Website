@@ -159,9 +159,9 @@
                                             <option value="2">Setrika</option>
                                             <option value="3">Selesai</option>
                                         </select>
-                                    </div> <br>
+                                    </div> <br></br>
                                     <div class="form-group col-md-6">
-                                        <label for="total">Total :</label><br>
+                                        <label for="total">Harga Total :</label><br>
                                         <div class="input-group">
                                             <span class="input-group-addon">Rp</span>
                                             <input type="text" class="form-control input-lg" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="total" disabled>
@@ -169,21 +169,20 @@
                                         </div>
                                     </div>
                                     <br>
+                                </div>
+                                <hr/>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-md-offset-6">
+                                        <a href="../../admin/output/dashboard.php" style="border-radius:20px;" class="btn btn-default" role="button">Batal</a>
+                                        <a href="../../admin/output/cetak_struk.php" style="border-radius:20px;" class="btn btn-info" role="button">Cetak</a>
+                                        <button type="submit" class="btn btn-info" style="border-radius:20px;">Simpan</button>
+                                    </div>
                                     <br>
                                 </div>
-                                <hr>
-                                <button type="submit" class="btn btn-info" style="margin-top:10px; border-radius:20px;">Kirim</button>
                             </form>
                         </div>
                    </div>
                 </div>
-                <!-- /. baris  -->
-                <hr />
-                  <div class="row">
-
-                    </div>
-                </div>
-                <!-- /. baris  -->
 
             </div>
             <!-- /. Page Inner  -->

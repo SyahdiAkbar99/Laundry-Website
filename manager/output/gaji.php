@@ -100,6 +100,7 @@
                                 <th>Gaji Pokok</th>
                                 <th>Gaji Bonus</th>
                                 <th>Total Gaji</th>
+                                <th>Tanggal</th>
                                 <th>Opsi</th>
                             </tr>
                         </thead>
@@ -110,6 +111,7 @@
                                 <td>2.000.000</td>
                                 <td>400.000</td>
                                 <td>2.400.000</td>
+                                <td>2/2/2019</td>
                                 <td style="text-align:center;">
                                     <a href="#" class="btn btn-warning" role="buttton"><i class="fa fa-edit"></i></a>
                                     <a href="#" class="btn btn-danger" role="buttton"><i class="fa fa-eraser"></i></a>
@@ -121,6 +123,7 @@
                                 <td>2.000.000</td>
                                 <td>220.000</td>
                                 <td>2.200.000</td>
+                                <td>3/9/2020</td>
                                 <td style="text-align:center;">
                                     <a href="#" class="btn btn-warning" role="buttton"><i class="fa fa-edit"></i></a>
                                     <a href="#" class="btn btn-danger" role="buttton"><i class="fa fa-eraser"></i></a>
@@ -134,6 +137,7 @@
                                 <th>Gaji Pokok</th>
                                 <th>Gaji Bonus</th>
                                 <th>Total Gaji</th>
+                                <th>Tanggal</th>
                                 <th>Opsi</th>
                             </tr>
                         </tfoot>

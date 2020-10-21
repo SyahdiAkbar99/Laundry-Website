@@ -91,7 +91,7 @@
                         <div class="container">
                             <h2>Input Ongkos Bulanan</h2>
                             <p>Usahakan pengisian data dengan jelas dan akurat</p>
-                            <form class="form-inline" action="../../admin/output/stok_barang.php">
+                            <form class="form-inline" action="../../admin/output/ongkos.php">
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <div class="input-group">
@@ -141,9 +141,9 @@
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="form-group col-md-6 col-md-offset-6">
-                                        <button type="submit" class="btn btn-default" style="margin-top:10px;border-radius:20px;">Batal</button>
-                                        <button type="submit" class="btn btn-info" style="margin-top:10px;border-radius:20px;">Simpan</button>
+                                    <div class="form-group col-md-6 col-md-offset-6" style="margin-top:10px;">
+                                        <a href="../../admin/output/ongkos.php" class="btn btn-default" role="button" style="border-radius:20px;">Batal</a>
+                                        <button type="submit" class="btn btn-info" style="border-radius:20px;">Simpan</button>
                                     </div>
                                     <br>
                                 </div>

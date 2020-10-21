@@ -137,9 +137,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <button type="submit" class="btn btn-default" style="margin-top:10px;border-radius:20px;">Batal</button>
-                                        <button type="submit" class="btn btn-info" style="margin-top:10px;border-radius:20px;">Simpan</button>
+                                    <div class="form-group col-md-6 " style="margin-top:10px;">
+                                    <a href="../../admin/output/stok_barang.php" style="border-radius:20px;" class="btn btn-default" role="button">Batal</a>
+                                        <button type="submit" class="btn btn-info" style="border-radius:20px;">Simpan</button>
                                     </div>
                                     <br>
                                 </div>

@@ -94,36 +94,36 @@
                    <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>No</th>
-                                <th>Bulan</th>
+                                <th>No</th>                               
                                 <th>Penghasilan Bersih</th>
                                 <th>Beban</th>
                                 <th>Laba Rugi Kotor</th>
+                                <th>Tanggal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>Oktober</td>
+                                <td>1</td>                   
                                 <td>800.000</td>
                                 <td>200.000</td>
                                 <td>1.000.000</td>
+                                <td>1/1/2020</td>
                             </tr>
                             <tr>
-                            <td>2</td>
-                                <td>November</td>
+                                <td>2</td>                               
                                 <td>1.000.000</td>
                                 <td>200.000</td>
                                 <td>1.200.000</td>
+                                <td>1/4/2020</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                            <th>No</th>
-                                <th>Bulan</th>
+                                <th>No</th>
                                 <th>Penghasilan Bersih</th>
                                 <th>Beban</th>
                                 <th>Laba Rugi Kotor</th>
+                                <th>Tanggal</th>
                             </tr>
                         </tfoot>
                     </table>

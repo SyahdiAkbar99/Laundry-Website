@@ -99,7 +99,8 @@
                                 <th>Jenis Cucian</th>
                                 <th>Durasi</th>
                                 <th>Total Berat</th>
-                                <th>Jumlah</th>
+                                <th>Total Harga</th>
+                                <th>Tanggal</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -110,6 +111,7 @@
                                 <td>Kilat</td>
                                 <td>18 Kg</td>
                                 <td>200.000</td>
+                                <td>1/7/2019</td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -118,6 +120,7 @@
                                 <td>Cepat</td>
                                 <td>26 Kg</td>
                                 <td>330.000</td>
+                                <td>4/7/2019</td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -127,7 +130,8 @@
                                 <th>Jenis Cucian</th>
                                 <th>Durasi</th>
                                 <th>Total Berat</th>
-                                <th>Jumlah</th>
+                                <th>Total Harga</th>
+                                <th>Tanggal</th>
                             </tr>
                         </tfoot>
                     </table>

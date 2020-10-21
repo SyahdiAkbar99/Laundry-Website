@@ -94,36 +94,36 @@
                    <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Tanggal</th>
                                 <th>Jumlah Pelanggan</th>
                                 <th>Jumlah Pendapatan</th>
                                 <th>Jumlah Pengeluaran</th>
                                 <th>Sisa</th>
+                                <th>Tanggal</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>10/11/2020</td>
+                            <tr>                              
                                 <td>13 Orang</td>
                                 <td>210.000</td>
                                 <td>50.000</td>
                                 <td>160.000</td>
+                                <td>10/11/2020</td>
                             </tr>
-                            <tr>
-                                <td>13/11/2020</td>
+                            <tr>                               
                                 <td>17 Orang</td>
                                 <td>340.000</td>
                                 <td>60.000</td>
                                 <td>280.000</td>
+                                <td>13/11/2020</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Tanggal</th>
                                 <th>Jumlah Pelanggan</th>
                                 <th>Jumlah Pendapatan</th>
                                 <th>Jumlah Pengeluaran</th>
                                 <th>Sisa</th>
+                                <th>Tanggal</th>
                             </tr>
                         </tfoot>
                     </table>

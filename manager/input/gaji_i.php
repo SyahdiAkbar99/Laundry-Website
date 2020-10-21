@@ -91,7 +91,7 @@
                         <div class="container">
                             <h2>Input Gaji Pegawai</h2>
                             <p>Usahakan pengisian data dengan jelas dan akurat</p>
-                            <form class="form-inline" action="../../admin/output/stok_barang.php">
+                            <form class="form-inline" action="../../manager/output/gaji.php">
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="Nama Pegawai" >Nama Pegawai :</label><br>
@@ -123,15 +123,17 @@
                                             <option value="1">3.000.000</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <button type="submit" class="btn btn-default" style="margin-top:10px;border-radius:20px;">Batal</button>
-                                        <button type="submit" class="btn btn-info" style="margin-top:10px;border-radius:20px;">Simpan</button>
+                                    <div class="form-group col-md-6" style="margin-top:10px;">
+                                        <div class="input-group">
+                                            <label for="Tanggal Hadir">Tanggal Gaji :</label><br>
+                                            <input type="date" class="form-control" placeholder="dd/mm/yyyy"  name="tgl_h" required> 
+                                        </div>
                                     </div>
                                     <br>
                                 </div>
                                 <hr>
                                 <div class="row">
-                                <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6">
                                         <label for="Nama Pegawai" >Gaji Bonus :</label><br>
                                         <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
                                             <option value="">Pilih...</option>
@@ -139,17 +141,28 @@
                                             <option value="1">500.000</option>
                                         </select>
                                     </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="Total Gaji">Total Gaji:</label><br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Rp</span>
+                                            <input type="text" class="form-control input-lg" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="total_gaji" disabled>
+                                            <span class="input-group-addon">,00</span>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <a href="../../manager/output/gaji.php" style="border-radius:20px;" class="btn btn-default" role="button">Batal</a>
+                                        <button type="submit" class="btn btn-info" style="border-radius:20px;">Simpan</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                    </div>
                 </div>
-                <!-- /. baris  -->
-                <hr />
-                  <div class="row">
-
-                    </div>
-                </div>
-                <!-- /. baris  -->
+                
+            </div>
 
             </div>
             <!-- /. Page Inner  -->
