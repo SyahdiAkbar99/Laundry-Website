@@ -93,18 +93,17 @@
                             <p>Usahakan pengisian data dengan jelas dan akurat</p>
                             <form class="form-inline" action="../../admin/output/dashboard.php" name="random_form">
                                 <div class="row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-4">
+                                        <label for="no_pemesanan">No Pemesanan :</label><br>
+                                        <input type="text" class="form-control" id="no_pemesanan" placeholder="No Pemesanan" name="no_psn" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
                                         <label for="nama_customer">Nama Customer :</label><br>
                                         <input type="text" class="form-control" id="nama_customer" placeholder="Nama Customer" name="nm_cst" required>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <div class="input-group">
-                                            <label for="berat_cuci">Berat Cucian :</label><br>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="berat_cuci" required>
-                                                <span class="input-group-addon">Kg</span>
-                                            </div>
-                                        </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="nama_kasir">Nama Kasir :</label><br>
+                                        <input type="text" class="form-control" id="nama_kasir" placeholder="Nama Kasir" name="nm_ksr" required>
                                     </div>
                                     <br>
                                 </div>
@@ -114,16 +113,18 @@
                                         <label for="Jenis Cuci" >Jenis Cucian :</label><br>
                                         <select id="jenis_cuci" class="form-control" name="jenis_cuci" required>
                                             <option value="">Pilih...</option>
-                                            <option value="0">Baju</option>
-                                            <option value="1">Kemeja</option>
+                                            <option value="0">Baju (Rp.3000)</option>
+                                            <option value="1">Boneka (Rp.7000)</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="paket">Paket :</label><br>
                                         <select id="paket" class="form-control" name="paket" required>
                                             <option value="">Pilih...</option>
-                                            <option value="0">Paket Kilat</option>
-                                            <option value="1">Paket Normal</option>
+                                            <option value="0">Paket Kilat (1 Hari - Kering) </option>
+                                            <option value="1">Paket Normal (2 Hari - Kering)</option>
+                                            <option value="2">Paket Kilat (1 Hari - Setrika) </option>
+                                            <option value="3">Paket Normal (2 Hari - Setrika)</option>
                                         </select>
                                     </div>
                                     <br>
@@ -131,20 +132,33 @@
                                 <hr>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label for="Durasi" >Durasi :</label><br>
-                                        <select id="durasi" class="form-control" name="durasi" required>
-                                            <option value="">Pilih...</option>
-                                            <option value="0">1 Hari</option>
-                                            <option value="1">2 Hari</option>
-                                        </select>
+                                        <div class="input-group">
+                                            <label for="berat_cuci">Berat Cucian :</label><br>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="berat_cuci" required>
+                                                <span class="input-group-addon">Kg</span>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="parfum">Parfum :</label><br>
                                         <select id="parfum" class="form-control" name="parfum" required>
                                             <option value="">Pilih...</option>
-                                            <option value="0">Parfum Sakura</option>
-                                            <option value="1">Parfum Casablance</option>
+                                            <option value="0">Parfum Sakura (Rp.1000)</option>
+                                            <option value="1">Parfum Casablance (Rp.2000)</option>
                                         </select>
+                                    </div>
+                                    <br>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="Waktu Pemesanan">Waktu Pemesanan :</label><br>
+                                        <input type="time" class="form-control" id="Waktu_pesan" placeholder="Waktu Pesan" name="wkt_psn" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="Tanggal Pemesanan">Tanggal Pemesanan :</label><br>
+                                        <input type="date" class="form-control" id="tanggal_pesan" placeholder="Tanggal Pesan" name="tgl_psn" required>
                                     </div>
                                     <br>
                                 </div>
@@ -174,7 +188,7 @@
                                 <div class="row">
                                     <div class="form-group col-md-6 col-md-offset-6">
                                         <a href="../../admin/output/dashboard.php" style="border-radius:20px;" class="btn btn-default" role="button">Batal</a>
-                                        <a href="../../admin/output/cetak_struk.php" style="border-radius:20px;" class="btn btn-info" role="button">Cetak</a>
+                                        <a href="../../admin/output/cetak_struk.php" style="border-radius:20px;" class="btn btn-info" role="button" target="_blank">Print Preview</a>
                                         <button type="submit" class="btn btn-info" style="border-radius:20px;">Simpan</button>
                                     </div>
                                     <br>

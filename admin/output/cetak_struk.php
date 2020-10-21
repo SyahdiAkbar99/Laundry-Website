@@ -8,20 +8,19 @@
     <link href="../../assets/css/bootstrap-3.css" rel="stylesheet" />
     <link href="../../assets/css/semantic.css" rel="stylesheet" />
     <style>
-        h4{
-            text-align:center;
-        }
-        h5{
-            font-weight:bold;
-        }
         p.name{
             text-align:left;
-            font-size:15px;
+            font-weight: 5px;
+        }
+        p.judul{
+            text-align:center;
+            font-weight:bold;
         }
         .container{
             border: 1px solid black;
             margin-top:20px;
             width:300px;
+            font-size:10px;
         }
         .border-fix{
             border: 1px solid black;
@@ -34,10 +33,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>Kuy Laundry <br>
+            <div class="col-xs-8 col-xs-offset-2">
+                <p class="judul"> Kuy Laundry <br>
                 Jalan Hayam Wuruk No 149
-                <br>+6281373230877</h4>
+                <br>+6281373230877</p>
             </div>
         </div>
         <br>
@@ -47,17 +46,7 @@
                 <div class="qrcode">
                     <canvas id = "canvas"></canvas>
                 </div><br>
-                <button class="btn btn-default ui primary button" onclick="genQR()">Generate QR Code</button>     
-            </div>
-        </div>
-        <hr>
-
-        <div class="row">
-            <div class="col-xs-6 text-left">
-                <p class="name">Pelanggan&nbsp;:&nbsp;Garini Azzahra</p>
-            </div>
-            <div class="col-xs-6">
-                <p class="name">Kasir&nbsp;:&nbsp;Andi Pras</p>
+                <button class="btn btn-default ui primary button" onclick="genQR()">QR Code</button>     
             </div>
         </div>
         <hr>
@@ -65,26 +54,53 @@
         <div class="row">
             <div class="col-xs-6">
                 <form name="random_form">
-                    <input type="text" class="form-control ui input" name="disini" value="" style="width:100%" disabled>
+                    <label for="no_pemesanan">No Pemesanan :</label>
+                    <input type="text" class="form-control ui input" name="disini" value="" placeholder="No Pemesanan" style="width:100%">
                 </form>
             </div>
-            <div class="col-xs-6"><input type="button" class="btn btn-success ui primary button" value="No Pesanan" onClick="random_all();"></div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-xs-6 text-left">                
+                <p class="name">
+                <label for="nama_customer">Nama Customer :</label>
+                <input type="text" class="form-control ui input" placeholder="Nama Customer" value="" style="width:100%;font-size:10px;">
+                </p>
+            </div>
+            <div class="col-xs-6 text-left">                
+                <p class="name">
+                <label for="nama_kasir">Nama Kasir :</label>
+                <input type="text" class="form-control ui input" placeholder="Nama Kasir" value="" style="width:100%; font-size:10px;">
+                </p>
+            </div>
+            
+            <!-- <div class="col-xs-6"><input type="button" class="btn btn-success ui primary button" value="No Pesanan" onClick="random_all();"></div> -->
         </div>
         <hr>
         <div class="row">
-            <div class="col-xs-6 text-left">Jam&nbsp;:&nbsp;09.18</div>
-            <div class="col-xs-6 text-left">Tgl&nbsp;:&nbsp;12-11-98</div>
+            <div class="col-xs-5">
+            <p class="name">
+            <label for="jam">Jam :</label>
+            <input type="time" class="form-control ui input" placeholder="Jam" value="" style="width:100%;font-size:10px;"></p></div>
+            <div class="col-xs-7"><p class="name">
+            <label for="tanggal">Tanggal :</label>
+            <input type="date" class="form-control ui input" placeholder="Tanggal" value="" style="width:100%;font-size:10px;"></p></div>
         </div>       
         <hr>
         <div class="row">
-            <div class="col-xs-8">CUCI KERING BAJU 4KG</div>
+            <div class="col-xs-7"> <p class="name">
+            <label for="jenis_cucian">Jenis Cucian x Kg :</label>
+                <input type="text" class="form-control ui input" placeholder="Jenis Cucian x Kg =" value="" style="width:100%;font-size:10px;"></p></div>
+            <div class="col-xs-5"> <p class="name">
+            <label for="total keseluruhan">Total Keseluruhan :</label>
+                <input type="text" class="form-control ui input" placeholder="Total Cucian" value="" style="width:100%;font-size:10px;"></p></div>
         </div>
         <div class="row">
-            <div class="col-xs-4 text-left">4 x 3000</div>
-            <div class="col-xs-4 col-xs-offset-4">12000</div><hr width="85%"> 
+             
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-xs-8">SETRIKA BAJU 2KG</div>
         </div>
         <div class="row">
@@ -102,26 +118,29 @@
         <div class="row">
             <div class="col-xs-4 text-left">TOTAL</div>
             <div class="col-xs-4 col-xs-offset-4">33.000</div>
-        </div>
+        </div> -->
+        <hr>
         <div class="row">
-            <div class="col-xs-4 text-left">BAYAR</div>
-            <div class="col-xs-4 col-xs-offset-4">50.000</div>
+            <div class="col-xs-6 ">Bayar :</div>
+            <div class="col-xs-6 "><p class="name"><input type="text" class="form-control ui input" placeholder="Bayar" value="" style="width:100%;font-size:10px;"></p></div>
         </div>
+        <hr>
         <div class="row">
-            <div class="col-xs-4 text-left">KEMBALI</div>
-            <div class="col-xs-4 col-xs-offset-4">17.000</div>
+            <div class="col-xs-6">Kembalian :</div>
+            <div class="col-xs-6 "> <p class="name"><input type="text" class="form-control ui input" placeholder="Kembalian" value="" style="width:100%;font-size:10px;"></p></div>
         </div>
         <hr>
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h5>CUCIAN YANG TELAH DIBAWA PULANG DILUAR TANGGUNG JAWAB KAMI</h5>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h5>TERIMAKASIH TELAH MEMAKAI JASA KUY LAUNDRY</h5>
+                <p class="judul">CUCIAN YANG TELAH DIBAWA PULANG DILUAR TANGGUNG JAWAB KAMI</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p class="judul">TERIMAKASIH TELAH MEMAKAI JASA KUY LAUNDRY</p>
+            </div>
+        </div>
+        <hr>
         <div class="row">
             <div class="col-xs-12 text-center">
             <input type="button" value="Batal" class="btn ui primary button" onClick="window.location.href='../../admin/input/dashboard_i.php';">
@@ -136,10 +155,6 @@
     <script src="../../assets/js/bootstrap-3.min.js"></script>
     <script src="../../assets/js/qrcode.min.js"></script>
     <script language="javascript" type="text/javascript">
-        $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-
         function genQR(str) {
             var str = document.querySelector("input").value;
             QRCode.toCanvas(document.getElementById("canvas"), str, function(error) {
@@ -148,15 +163,15 @@
             });
         }
         function random_all() {
-        var campur = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-        var panjang = 9;
-        var random_all = '';
-        for (var i=0; i<panjang; i++) {
-            var hasil = Math.floor(Math.random() * campur.length);
-            random_all += campur.substring(hasil,hasil+1);
+            var campur = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+            var panjang = 9;
+            var random_all = '';
+            for (var i=0; i<panjang; i++) {
+                var hasil = Math.floor(Math.random() * campur.length);
+                random_all += campur.substring(hasil,hasil+1);
+            }
+            document.random_form.disini.value = random_all;
         }
-        document.random_form.disini.value = random_all;
-    }
     </script>
 </body>
 </html>
