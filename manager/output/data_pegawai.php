@@ -109,7 +109,7 @@
                                 <td>1</td>
                                 <td>Jordi Setiawan</td>
                                 <td>Jl. Sutoyo</td>
-                                <td>Aktif</td>
+                                <td>Mutasi</td>
                                 <td>1/2/2020</td>
                                 <td>1/5/2020</td>
                                 <td>30</td>
@@ -124,7 +124,7 @@
                                 <td>Jl. Utomo</td>
                                 <td>Aktif</td>
                                 <td>1/5/2020</td>
-                                <td>1/8/2020</td>
+                                <td>-</td>
                                 <td>25</td>
                                 <td style="text-align:center;">
                                     <a href="#" class="btn btn-warning" role="buttton"><i class="fa fa-edit"></i></a>

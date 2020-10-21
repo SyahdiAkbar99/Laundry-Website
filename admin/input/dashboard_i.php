@@ -91,7 +91,7 @@
                         <div class="container">
                             <h2>Input Data Pemesanan</h2>
                             <p>Usahakan pengisian data dengan jelas dan akurat</p>
-                            <form class="form-inline" action="../../admin/output/dashboard.php">
+                            <form class="form-inline" action="../../admin/output/dashboard.php" name="random_form">
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="nama_customer">Nama Customer :</label><br>
