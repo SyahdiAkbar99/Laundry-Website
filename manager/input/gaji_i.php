@@ -100,27 +100,26 @@
                                             <option value="0">Andi Satriawan</option>
                                             <option value="1">Beni Sutarjo</option>
                                         </select>
+                                        <hr>
                                     </div>
-                                    <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <div class="input-group">
-                                            <label for="Harga Satuan">Harga Satuan :</label><br>
-                                            <div class="input-group">
-                                                <span class="input-group-addon">Rp</span>
-                                                <input type="text" class="form-control" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="hrg_satuan" required>
-                                                <span class="input-group-addon">,00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                </div>
-                                <hr>
+                              
                                     <div class="form-group col-md-6">
                                         <label for="Nama Pegawai" >Gaji Pokok :</label><br>
                                         <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
                                             <option value="">Pilih...</option>
                                             <option value="0">2.000.000</option>
                                             <option value="1">3.000.000</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                    <div class="form-group col-md-6"> &nbsp &nbsp
+                                        <label for="Nama Pegawai" >Gaji Bonus :</label><br> &nbsp &nbsp
+                                        <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
+                                            <option value="">Pilih...</option>
+                                            <option value="0">200.000</option>
+                                            <option value="1">500.000</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6" style="margin-top:10px;">
@@ -132,20 +131,12 @@
                                     <br>
                                 </div>
                                 <hr>
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="Nama Pegawai" >Gaji Bonus :</label><br>
-                                        <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
-                                            <option value="">Pilih...</option>
-                                            <option value="0">200.000</option>
-                                            <option value="1">500.000</option>
-                                        </select>
-                                    </div>
+                                
                                     <div class="form-group col-md-6">
                                         <label for="Total Gaji">Total Gaji:</label><br>
                                         <div class="input-group">
                                             <span class="input-group-addon">Rp</span>
-                                            <input type="text" class="form-control input-lg" aria-label="Amount (rounded to the nearest dollar)" placeholder="1"  name="total_gaji" disabled>
+                                            <input type="text" class="form-control input-lg" aria-label="Amount (rounded to the nearest dollar)" placeholder="3.200.000"  name="total_gaji" disabled>
                                             <span class="input-group-addon">,00</span>
                                         </div>                                       
                                     </div>
