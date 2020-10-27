@@ -94,13 +94,13 @@
                             <form class="form-inline" action="../../manager/output/data_pegawai.php">
                                 <div class="row">
                                 <div class="form-group col-md-6">
-                                        <label for="Kode Barang">Nama Pegawai :</label><br>
-                                        <input type="text" class="form-control" id="kode_barang" placeholder="Kode Barang" name="kd_brg" required>
+                                        <label for="Nama Pegawai">Nama Pegawai :</label><br>
+                                        <input type="text" class="form-control" id="nm_pegawai" placeholder="Nama Pegawai" name="nm_pegawai" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <div class="input-group">
-                                            <label for="Tanggal Hadir">Tanggal Masuk :</label><br>
-                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy"  name="tgl_h" required> 
+                                            <label for="Tanggal Hadir">Tanggal Lahir :</label><br>
+                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy"  name="tgl_lhr" required> 
                                         </div>
                                     </div>
                                     <br>
@@ -108,49 +108,45 @@
                                 <hr>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label for="Nama Pegawai" >Jenis Kelamin :</label><br>
-                                        <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
+                                        <label for="jenis kelamin" >Jenis Kelamin :</label><br>
+                                        <select id="jenis_kelamin" class="form-control" name="jenis_kelamin" required>
                                             <option value="">Pilih...</option>
                                             <option value="0">Perempuan</option>
                                             <option value="1">Laki - Laki</option>
                                         </select>
                                        <hr>
                                     </div>
-                                  
-                                    <div class="form-group col-md-6">
-                                        <div class="input-group">
-                                            <label for="Tanggal Hadir">Tanggal Keluar :</label><br>
-                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy"  name="tgl_h" required> 
-                                        </div>
-                                        <hr>                                       
-                                    </div>
-                                </div>
+                                
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <div class="input-group">
-                                            <label for="Harga Satuan">Nomor Telphone :</label><br>
+                                            <label for="no telp">Nomor Telphone :</label><br>
                                             <div class="input-group">
                                                 <span class="input-group-addon">+62</span>
-                                                <input type="text" class="form-control" aria-label="Amount (rounded to the nearest dollar)" placeholder="8"  name="hrg_satuan" required>
-                                                
+                                                <input type="text" class="form-control"  placeholder="81582890675"  name="no_telp" required>
+                                                <br>
                                             </div>
+                                            <hr>
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                    <label for="Nama Pegawai" >Status :</label><br>
-                                        <select id="nama_pegawai" class="form-control" name="nm_pegawai" required>
+                                    <hr>
+                             
+                                    <div class="form-group col-md-6"> &nbsp &nbsp &nbsp
+                                        <label for="Status"  >Status :</label><br> &nbsp &nbsp &nbsp 
+                                        <select id="status" class="form-control" name="status" required>
                                             <option value="">Pilih...</option>
                                             <option value="0">Aktif</option>
                                             <option value="1">Mutasi</option>
                                         </select>
+                                      
                                     </div>
                                     <br>
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="Kode Barang">Alamat :</label><br>
-                                        <input type="text" class="form-control" id="kode_barang" placeholder="Alamat" name="kd_brg" required>
+                                    <div class="form-group col-md-6"> &nbsp &nbsp &nbsp
+                                        <label for="alamat">Alamat :</label><br> &nbsp &nbsp &nbsp
+                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat" name="alamat" required>
                                     </div>
                                     <div class="form-group col-md-6" style="margin-top:10px;">
                                         <a href="../../manager/output/data_pegawai.php" style="border-radius:20px;" class="btn btn-default" role="button">Batal</a>
@@ -162,7 +158,7 @@
                    </div>
                 </div>
                 <!-- /. baris  -->
-                <hr />
+         
                   <div class="row">
 
                     </div>
