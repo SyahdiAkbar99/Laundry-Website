@@ -68,43 +68,47 @@
             </div>
             <div class="col-lg-7">
                 <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href="../login/login.php"><u>Sudah punya akun ?</u></a></small>
-                    <h3 class="mb-1">Formulir Daftar</h3>
-                    <p class="mb-4 text-sm">Buat akunmu dan rasa penasaranmu akan terjawab !</p>
-                    <div class="row mt-3">
-                        <div class="col-md-6"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Nama Lengkap Pemilik</h6>
-                            </label> <input type="text" name="fullnm_pemilik" placeholder="Mba Laura">
+
+                    <form action="../login/login.php" method="post">
+                        <h3 class="mb-1">Formulir Daftar</h3>
+                        <p class="mb-4 text-sm">Buat akunmu dan rasa penasaranmu akan terjawab !</p>
+                        <div class="row mt-3">
+                            <div class="col-md-6"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Nama Lengkap Pemilik</h6>
+                                </label> <input type="text" name="fullnm_pemilik" placeholder="Mba Laura">
+                            </div>
+                            <div class="col-md-6"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Nama User Pemilik</h6>
+                                </label> <input type="text" name="usrnm_pemilik" placeholder="mbalaura123">
+                            </div>
+                            <div class="col-md-6"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Nama User Admin</h6>
+                                </label> <input type="text" name="nm_admin" placeholder="Mba Laura">
+                            </div>
+                            <div class="col-md-6"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Nomor HP User Pemilik</h6>
+                                </label> <input type="number" name="no_pemilik" placeholder="081373230877">
+                            </div>
                         </div>
-                        <div class="col-md-6"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Nama User Pemilik</h6>
-                            </label> <input type="text" name="usrnm_pemilik" placeholder="mbalaura123">
+                            <div class="row px-3"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Alamat Email</h6>
+                                </label> <input type="text" name="email" placeholder="mba_laura@email.com">
+                            </div>
+                            <div class="row px-3"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Password User</h6>
+                                </label> <input type="password" name="pw_pemilik" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            </div>
+                            <div class="row px-3"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Password Admin</h6>
+                                </label> <input type="password" name="pw_admin" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            </div>
+                        <div class="row px-3 mb-3"> <small class="text-muted">Dengan mendaftar kamu setuju akan  <a href="" class="text-primary">Kebijakan</a> dan <a href="" class="text-primary">Ketentuan</a> dari kami</small>
                         </div>
-                        <div class="col-md-6"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Nama User Admin</h6>
-                            </label> <input type="text" name="nm_admin" placeholder="Mba Laura">
+                        <div class="row mb-4">
+                            <div class="col-md-12"><input type="submit" class="btn btn-info text-center mb-1 py-2" value="Buat Akun">
                         </div>
-                        <div class="col-md-6"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Nomor HP User Pemilik</h6>
-                            </label> <input type="number" name="no_pemilik" placeholder="081373230877">
-                        </div>
-                    </div>
-                        <div class="row px-3"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Alamat Email</h6>
-                            </label> <input type="text" name="email" placeholder="mba_laura@email.com">
-                        </div>
-                        <div class="row px-3"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Password User</h6>
-                            </label> <input type="password" name="pw_pemilik" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                        </div>
-                        <div class="row px-3"> <label class="mb-0">
-                                <h6 class="mb-0 text-sm">Password Admin</h6>
-                            </label> <input type="password" name="pw_admin" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-                        </div>
-                    <div class="row px-3 mb-3"> <small class="text-muted">Dengan mendaftar kamu setuju akan  <a href="" class="text-primary">Kebijakan</a> dan <a href="" class="text-primary">Ketentuan</a> dari kami</small>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-md-12"><a href="../login/login.php" class="btn btn-info text-center mb-1 py-2" role="button">Buat Akun</a>
-                    </div>
+                    </form>
+
                 </div>
 
                     <!-- <div class="row px-3 mb-4">
