@@ -1,3 +1,11 @@
+<?php 
+	if(isset($_GET['pesan'])){
+		if($_GET['pesan']=="gagal"){
+			echo "<div class='alert'>Username dan Password tidak sesuai !</div>";
+		}
+	}
+	?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +20,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<div class="container">
+      <form class="form-signin" action="../proses/proses_register.php" method="post" enctype="multipart/form-data">
+
 <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
     <div class="card card0 border-0">
         <div class="row d-flex">
@@ -67,48 +79,33 @@
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href="../login/login.php"><u>Sudah punya akun ?</u></a></small>
-
-                    <form action="../login/login.php" method="post">
-                        <h3 class="mb-1">Formulir Daftar</h3>
-                        <p class="mb-4 text-sm">Buat akunmu dan rasa penasaranmu akan terjawab !</p>
+                <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href="register.php"><u>Belum punya akun ? Daftar sini ! </u></a></small>
+                    <form action="../proses/cek_login.php" method="post">
+                        <h3 class="mb-1">Register</h3>
                         <div class="row mt-3">
-                            <div class="col-md-6"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Nama Lengkap Pemilik</h6>
-                                </label> <input type="text" name="fullnm_pemilik" placeholder="Mba Laura">
-                            </div>
-                            <div class="col-md-6"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Nama User Pemilik</h6>
-                                </label> <input type="text" name="usrnm_pemilik" placeholder="mbalaura123">
-                            </div>
-                            <div class="col-md-6"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Nama User Admin</h6>
-                                </label> <input type="text" name="nm_admin" placeholder="Mba Laura">
-                            </div>
-                            <div class="col-md-6"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Nomor HP User Pemilik</h6>
-                                </label> <input type="number" name="no_pemilik" placeholder="081373230877">
+                            <div class="col-md-12"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Username</h6>
+                                </label> <input type="text" name="username" placeholder="mbalaura123">
                             </div>
                         </div>
-                            <div class="row px-3"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Alamat Email</h6>
-                                </label> <input type="text" name="email" placeholder="mba_laura@email.com">
+                        <div class="col-md-12"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">No Handphone</h6>
+                                </label> <input type="number" name="no_hp" placeholder="081572712345">
                             </div>
-                            <div class="row px-3"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Password User</h6>
-                                </label> <input type="password" name="pw_pemilik" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <div class="col-md-12"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Password</h6>
+                                </label> <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                             </div>
-                            <div class="row px-3"> <label class="mb-0">
-                                    <h6 class="mb-0 text-sm">Password Admin</h6>
-                                </label> <input type="password" name="pw_admin" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                            <div class="col-md-12"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Jabatan</h6>
+                                </label> <input type="text" name="level" placeholder="admin">
                             </div>
-                        <div class="row px-3 mb-3"> <small class="text-muted">Dengan mendaftar kamu setuju akan  <a href="" class="text-primary">Kebijakan</a> dan <a href="" class="text-primary">Ketentuan</a> dari kami</small>
-                        </div>
+                                
+
                         <div class="row mb-4">
-                            <div class="col-md-12"><input type="submit" class="btn btn-info text-center mb-1 py-2" value="Buat Akun">
+                            <div class="col-md-12"><input type="submit" class="btn btn-info text-center mb-1 py-2" name="submit" value="Buat Akun">
                         </div>
                     </form>
-
                 </div>
 
                     <!-- <div class="row px-3 mb-4">

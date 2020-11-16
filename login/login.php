@@ -1,9 +1,17 @@
+<?php 
+	if(isset($_GET['pesan'])){
+		if($_GET['pesan']=="gagal"){
+			echo "<div class='alert'>Username dan Password tidak sesuai !</div>";
+		}
+	}
+	?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Kuy Laundry</title>
+    <title>Login Kuy Laundry</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/styleregis.css">
@@ -67,21 +75,21 @@
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href="../login/register.php"><u>Belum punya akun ? Daftar sini ! </u></a></small>
-                    <form action="../admin/output/dashboard.php" method="post">
-                        <h3 class="mb-1">Masuk Kuy</h3>
+                <div class="card2 card border-0 px-4 px-sm-5 py-5"> <small class="text-right mb-3"><a href="register.php"><u>Belum punya akun ? Daftar sini ! </u></a></small>
+                    <form action="../proses/cek_login.php" method="post">
+                        <h3 class="mb-1">Login </h3>
                         <div class="row mt-3">
                             <div class="col-md-12"> <label class="mb-0">
                                     <h6 class="mb-0 text-sm">Username</h6>
-                                </label> <input type="text" name="usrnm" placeholder="mbalaura123">
+                                </label> <input type="text" name="username" placeholder="mbalaura123">
                             </div>
                         </div>
                             <div class="row px-3"> <label class="mb-0">
                                     <h6 class="mb-0 text-sm">Password</h6>
-                                </label> <input type="password" name="pw" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                </label> <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                             </div>
                         <div class="row mb-4">
-                            <div class="col-md-12"><input type="submit" class="btn btn-info text-center mb-1 py-2" value="Masuk">
+                            <div class="col-md-12"><input type="submit" class="btn btn-info text-center mb-1 py-2" name="masuk" value="Masuk">
                         </div>
                     </form>
                 </div>
